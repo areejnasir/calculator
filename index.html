@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>A simple calculator</h2>
+        <div class="container">
+                <div id="container">
+                    <div class="result">
+                        <div style="justify-content: space-evenly; display: flex;" class="history">
+                           <input id="result2"  type="btn"> 
+                        </div>
+                        <!-- <hr> -->
+                        <div class="output">
+                            <p class="o-value"></p>
+                        </div>
+                        <!-- <hr> -->
+                    </div>
+                    <br>
+                    <br>
+                    <div class="keyboard" style="justify-content: space-evenly;">
+                        <center>
+                            <button style="background-color: blueviolet;" onclick="clearInput('')" class="btn">C</button>
+                            <button style="background-color: rgb(64, 226, 43);" onclick="getbtn('0')" class="btn">0</button>
+                            <button style="background-color: rgb(236, 152, 215);" onclick="getbtn('%')" class="btn">%</button>
+                            <button style="background-color: rgb(43, 226, 195);" onclick="getbtn('/')" class="btn">/</button>
+                        </center>
+                        
+                        <center>
+                            <button style="background-color: rgb(40, 4, 243);" onclick="getbtn('7')" class="btn">7</button>
+                            <button style="background-color: rgb(241, 160, 10);" onclick="getbtn('8')" class="btn">8</button>
+                            <button style="background-color: rgb(44, 61, 4);" onclick="getbtn('9')" class="btn">9</button>
+                            <button style="background-color: rgb(56, 46, 104);" onclick="getbtn('*')" class="btn">X</button>
+                        </center>
+                       
+
+                        <center>
+                            <button style="background-color: rgb(226, 43, 43);" onclick="getbtn('4')" class="btn">4</button>
+                            <button style="background-color: rgb(43, 226, 125);" onclick="getbtn('5')" class="btn">5</button>
+                            <button style="background-color: rgb(43, 137, 226);" onclick="getbtn('6')" class="btn">6</button>
+                            <button style="background-color: rgb(226, 43, 73);" onclick="getbtn('-')" class="btn">-</button>
+                        </center>
+                        
+
+                        <center>
+                            <button style="background-color: rgb(43, 55, 226);" onclick="getbtn('1')" class="btn">1</button>
+                            <button style="background-color: rgb(226, 101, 43);" onclick="getbtn('2')" class="btn">2</button>
+                            <button style="background-color: rgb(192, 226, 43);" onclick="getbtn('3')" class="btn">3</button>
+                            <button style="background-color: rgb(226, 43, 186);" onclick="getbtn('+')" class="btn">+</button>
+                        </center>
+                       
+
+                        <center>
+                            <button style="background-color: blueviolet; width: 90%;" onclick="getResult('=')" class="btn">Enter</button>
+                        </center>
+                    </div>
+                </div>
+              
+        </div>
+  
+</body>
+<script src="app.js"></script>
+</html>
